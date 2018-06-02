@@ -1,0 +1,49 @@
+<% include header%>
+<% if(images.length) {%>
+    <% images.forEach((img)=>{%>
+    
+  <div class="row container  text-center" id="center">
+  <h1>Zombie Clases</h1>
+
+
+    <div class="col-lg-4 col-sm-6 col-xs-12 container img-container">
+    <h3 class="text-justify">Zombie</h3>
+        <a href="#">
+             <img src='<%= img.zombie1 %>' id="img-container" class="thumbnail img-responsive">
+        </a>
+    </div>
+    
+     <div class="col-lg-4 col-sm-6 col-xs-12 ">
+     <h3 class="text-justify">Zombie Red</h3>
+        <a href="#">
+             <img src='<%= img.zombie2 %>' id="img-container" class="thumbnail img-responsive">
+        </a>
+    </div>
+
+     <div class="col-lg-4 col-sm-6 col-xs-12 img-container">
+     <h3 class="text-justify">Zombie Crimson</h3>
+        <a href="#">
+             <img src='<%= img.zombie3 %>' id="img-container" class="thumbnail img-responsive">
+        </a>
+    </div>
+
+      <div class="col-lg-4 col-sm-6 col-xs-12 container col-lg-offset-1">
+    <h3 class="text-justify">Tyrant</h3>
+        <a href="#">
+             <img src='<%= img.tyrant %>' id="img-container-bottom" class="thumbnail img-responsive">
+        </a>
+    </div>
+
+    <div class="col-lg-4 col-sm-6 col-xs-12 container col-lg-offset-1">
+    <h3 class="text-justify">Nemesis</h3>
+        <a href="#">
+             <img src='<%= img.nemesis %>' id="img-container-bottom" class="thumbnail img-responsive">
+        </a>
+    </div>
+     
+  </div>
+</div>
+        <% }) %>
+    <% } else { %>
+    <% }%>
+<% include footer%>

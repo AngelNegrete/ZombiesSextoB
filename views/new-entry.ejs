@@ -1,0 +1,42 @@
+<% include header%>
+
+<form class="container" method="post" role="form">
+
+<div class="container col-lg-4" id="center">
+        <h2>Agregar una victima</h2>
+    <div class="form-group">
+   <label for="title">Nombre de la victima</label> <i class="glyphicon glyphicon-user"></i>
+        <input type="text" class="form-control"
+        id="title" name="title" placeholder="Tony Stark" required />
+        </div>
+        <div class="form-group">
+
+        <label for="title">Descripcion de muerte</label> <i class="glyphicon glyphicon-exclamation-sign"></i>
+        <textarea class="form-control" id="body" 
+        name="body" placeholder="Escribe un mensaje" rows="3" required>
+        </textarea>
+    </div>
+
+    <div class="form-group">
+        
+        <div class="form-group">
+        <label for="edad">Edad &nbsp;</label><i class="glyphicon glyphicon-time"></i>
+        <input type="number" class="form-control" id="edad" name="edad"> 
+        </div>
+
+        <div class="radio">
+        <label class="active"><input type="radio" name="sex" id="sex" 
+        checked value="Hombre">Hombre</label>
+        </div>
+
+        <div class="radio">
+        <label><input type="radio" name="sex" id="sex" value="Mujer">Mujer</label>
+        </div>
+
+
+        <input type="submit" class="btn btn-primary" value="Aceptar" /> 
+        
+    </div>
+</div>
+</form>
+<% include footer %>

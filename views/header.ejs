@@ -1,0 +1,41 @@
+<DOCTYPE html>
+<html lang="en">
+<% if(images.length) {%>
+    <% images.forEach((img)=>{%>
+<head>
+    <meta charset="UTF8">
+    <link rel="stylesheet" 
+    href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+    
+<body >
+
+<div class="container-fluid bg-dark">
+<h1>
+<a href="/new-entry" id="btn-margin" class="btn btn-danger btn-lg pull-right">
+   Victimas
+</a>
+
+<a href="/weapons" id="btn-margin" class="btn btn-danger btn-lg pull-right">
+    Armas
+</a>
+
+<a href="/clases" id="btn-margin" class="btn btn-danger btn-lg pull-right">
+    Clases
+</a>
+</h1>
+    <a href="/" > <img src="<%= img.logo %>" 
+      alt="Zombie" width="400" height="122"> </a>
+
+</div>
+
+<% }) %>
+<% } else { %>
+<% }%>
+  
+
+
+
+   

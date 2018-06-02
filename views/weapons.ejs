@@ -1,0 +1,49 @@
+<% include header%>
+
+<% if(weapons.length) {%>
+    <% weapons.forEach((weapon)=>{%>
+
+
+
+<div id="table-font" class="container" align="center">
+  <h2>Armas</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Arma</th>
+        <th>Tipo de zombie</th>
+        <th>info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td > <img id="armas" src='<%= weapon.w1 %>'> </td>
+        <td id="table-text">zombie red, zombie crimson</td>
+        <td id="table-text">Utilizan sus uñas para desgarrar a las personas</td>
+      </tr>      
+      <tr>
+        <td > <img id="armas" src='<%= weapon.w2 %>'> </td>
+        <td id="table-text">zombie, zombie red, zombie crimson</td>
+        <td id="table-text">Muerden a las personas y siguen infectandolos con el virus T</td>
+      </tr> 
+      <tr>
+        <td > <img id="armas" src='<%= weapon.w3 %>'> </td>
+        <td id="table-text">Nemesis</td>
+        <td id="table-text">La gran bazooka que utiliza este moustro entre otras armas</td>
+      </tr> 
+
+      <tr>
+        <td > <img id="armas" src='<%= weapon.w4 %>'> </td>
+        <td id="table-text">Tyrant</td>
+        <td id="table-text">Su mano deforme, es utilizada como arma para atravesar a los humanos</td>
+      </tr> 
+    </tbody>
+  </table>
+</div>
+
+
+<% }) %>
+<% } else { %>
+<% }%>
+    
+    <% include footer%>

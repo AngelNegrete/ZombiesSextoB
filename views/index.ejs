@@ -1,0 +1,22 @@
+<% include header%>
+<% if(entries.length) {%>
+    <% entries.forEach((entry)=>{%>
+        <div class="panel panel-primary" id="black">
+            <div class="panel-heading">
+                <div class="text pull-right">
+                    <%= entry.created%>
+                </div>
+                 <%= entry.nombre + entry.title %>
+            </div>
+            <div class="panel-body" id="black">
+             <p class="">   <%= entry.body%> </p>
+             <p class="alert-dang">   <%= entry.sex %>     </p>
+             <p class="alert-dang"> <%= entry.edad %> </p>
+            </div>
+        </div>
+        <% }) %>
+    <% } else { %>
+    <% }%>
+
+    
+    <% include footer%>
